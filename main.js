@@ -58,7 +58,7 @@ function getNews(category, country) {
         .then((data) => {
 
             let array = data.articles
-            let articles = array.splice(0, 20)
+            let articles = array
             let html = ""
             articles.forEach(element => {
                 html += ` <div class="news_card"> <img src="${element.urlToImage}"> <div class="news_text"> <span class="title"> ${element.title} </span> 
